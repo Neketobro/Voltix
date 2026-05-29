@@ -1,17 +1,19 @@
+import { ActionPanel } from "../ActionPanel";
 import { Input } from "../UI";
-import "./Header.css";
 
 export function Header() {
   return (
-    <header id="header">
+    <header className="bg-(--primary) dark:bg-(--primary) flex items-center justify-between px-[10px] sm:px-[100px] h-[80px] w-full mb-[20px] gap-[5px] md:gap-[10px]">
       <div>
-        <img src="src/assets/logo.png" alt="logo image" width={150} />
+        <img src="src/assets/logo.png" alt="logo image" className="w-[150px]" />
       </div>
       <div>
         <Input placeholder="Search" />
       </div>
-      <div>action panel</div>
-      <div>lang</div>
+      <div className="hidden xl:flex">
+        <ActionPanel />
+      </div>
+      <div className="hidden md:flex">lang</div>
     </header>
   );
 }

@@ -1,73 +1,88 @@
-# React + TypeScript + Vite
+# Icon
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+-- bars-3.svg
+-- bell-alert.svg
+-- bell.svg
+-- bolt.svg
+-- calendar-date-range.svg
+-- calendar.svg
+-- calendar-days.svg
+-- chart-bar.svg
+-- chart-pie.svg
+-- chat-bubble-left-ellipsis.svg
+-- chat-bubble-left-right.svg
+-- chat-bubble-oval-left-ellipsis.svg
+-- check-circle.svg
+-- chevron-left.svg
+-- chevron-right.svg
+-- chevron-up.svg
+-- circle-stack.svg
+-- clipboard-document-check.svg
+-- clipboard-document-list.svg
+-- currency-dollar.svg
+-- currency-euro.svg
+-- qr-code.svg
+-- square-2-stack.svg 
+-- wallet.svg
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+-- x-circle.svg - close
+-- x-mark.svg
 
-## React Compiler
+-- squares-2x2.svg - catalog
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+-- envelope.svg - sms
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+-- exclamation-circle.svg - warning
+-- exclamation-triangle.svg
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+-- funnel.svg - filter
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+-- heart.svg - heart / favorite
+-- star.svg - favorite
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+-- information-circle.svg - info
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+-- language.svg - languege
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+-- link.svg - link
+-- share.svg
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+-- list-bullet.svg - list
+
+-- magnifying-glass.svg - search
+-- magnifying-glass-plus.svg
+-- magnifying-glass-minus.svg
+
+-- map.svg - map
+
+-- moon.svg - moon
+-- sun.svg - sun
+
+-- trash.svg - trash / delete
+
+-- truck.svg - truck - delivery
+
+-- user-circle.svg - user / profile
+-- user-group.svg - user group
+-- user.svg
+-- users.svg
+
+-- no-symbol.svg - blocked
+
+-- percent-badge.svg - percent
+
+-- question-mark-circle.svg - question
+
+-- ellipsis-horizontal-circle.svg - круг с точками
+-- ellipsis-horizontal.svg
+-- ellipsis-vertical.svg
+
+-- shield-check.svg - shield
+-- shield-exclamation.svg
+
+-- cog-6-tooth.svg - setting
+
+-- shopping-bag.svg - buseket
+-- shopping-cart.svg
