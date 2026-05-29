@@ -5,15 +5,17 @@ import {
   HeartIcon,
   ShoppingCartIcon,
 } from "@heroicons/react/24/outline";
-import { IconButton } from "../UI/Buttons/IconButton";
-import { Button } from "../UI";
+import { Button, IconButton } from "../../UI";
 
 type Props = {
   direction?: "row" | "col" | "row-reverse" | "col-reverse";
   className?: string;
 };
 
-export function ListCategorises({ direction = "col", className = "hidden" }: Props) {
+export function ListCategorises({
+  direction = "col",
+  className = "hidden",
+}: Props) {
   const directionVariable = {
     row: "flex-row",
     col: "flex-col",
@@ -62,7 +64,9 @@ export function ListCategorises({ direction = "col", className = "hidden" }: Pro
       >
         Accessories
       </IconButton>
-      <Button arrowIcon={true} onClick={()=>{}}>View all categories</Button>
+      <Button arrowIcon={true} onClick={() => {}}>
+        View all categories
+      </Button>
     </div>
   );
 }

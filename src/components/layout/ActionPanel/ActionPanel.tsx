@@ -5,7 +5,7 @@ import {
   HeartIcon,
   ShoppingCartIcon,
 } from "@heroicons/react/24/outline";
-import { IconButton } from "../UI/Buttons/IconButton";
+import { IconButton } from "../../UI/Buttons/IconButton";
 
 export function ActionPanel() {
   return (

@@ -1,4 +1,4 @@
-import { Button } from "../UI";
+import { Button } from "../../UI";
 
 export function BenefitsSection() {
     return (

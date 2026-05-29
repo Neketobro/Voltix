@@ -3,8 +3,8 @@ import {
   PageLayout,
   ListCategorises,
   HeroBanner,
+  BenefitsSection,
 } from "../../components";
-import { BenefitsSection } from "../../components/BenefitsSection";
 
 export function Main() {
   return (

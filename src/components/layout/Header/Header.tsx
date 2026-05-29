@@ -1,5 +1,5 @@
 import { ActionPanel } from "../ActionPanel";
-import { Input } from "../UI";
+import { Input } from "../../UI";
 
 export function Header() {
   return (
