@@ -4,6 +4,7 @@ import {
   ListCategorises,
   HeroBanner,
   BenefitsSection,
+  NewArrivals,
 } from "../../components";
 
 export function Main() {
@@ -14,7 +15,7 @@ export function Main() {
           <div className="flex justify-between gap-[10px]">
             <ListCategorises className="hidden lg:flex" />
             <HeroBanner />
-            <ListCategorises className="hidden xl:flex" />
+            <NewArrivals className="hidden xl:flex" />
           </div>
           <BenefitsSection />
         </div>
