@@ -1,5 +1,4 @@
 import {
-  Button,
   PageLayout,
   ListCategorises,
   HeroBanner,
@@ -20,6 +19,7 @@ export function Main() {
           <BenefitsSection />
         </div>
       </div>
+
     </PageLayout>
   );
 }
