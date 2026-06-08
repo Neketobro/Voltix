@@ -9,7 +9,7 @@ import {
 import { useTranslation } from "react-i18next";
 
 export function Main() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
     <PageLayout>
       <div className="min-h-screen flex flex-col gap-[10px]">

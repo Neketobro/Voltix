@@ -6,40 +6,34 @@ import {
   ShoppingCartIcon,
 } from "@heroicons/react/24/outline";
 import { IconButton } from "../../UI/Buttons/IconButton";
+import { useTranslation } from "react-i18next";
 
 export function ActionPanel() {
+  const { t } = useTranslation("actionpanel");
+
+  const items = [
+    { key: "main", icon: HomeIcon },
+    { key: "catalog", icon: Squares2X2Icon },
+    { key: "profile", icon: UserCircleIcon },
+    { key: "favorite", icon: HeartIcon },
+    { key: "cart", icon: ShoppingCartIcon },
+  ];
+
   return (
     <div className="flex gap-[20px] md:gap-[10px]">
-      <IconButton
-        textColor="white"
-        icon={<HomeIcon className="size-6" color="#fff" />}
-      >
-        Main
-      </IconButton>
-      <IconButton
-        textColor="white"
-        icon={<Squares2X2Icon className="size-6" color="#fff" />}
-      >
-        Catalog
-      </IconButton>
-      <IconButton
-        textColor="white"
-        icon={<UserCircleIcon className="size-6" color="#fff" />}
-      >
-        Profile
-      </IconButton>
-      <IconButton
-        textColor="white"
-        icon={<HeartIcon className="size-6" color="#fff" />}
-      >
-        Favorite
-      </IconButton>
-      <IconButton
-        textColor="white"
-        icon={<ShoppingCartIcon className="size-6" color="#fff" />}
-      >
-        Busket
-      </IconButton>
+      {items.map((item) => {
+        const Icon = item.icon;
+
+        return (
+          <IconButton
+            key={item.key}
+            textColor="white"
+            icon={<Icon className="size-6" color="#fff" />}
+          >
+            {t(item.key)}
+          </IconButton>
+        );
+      })}
     </div>
   );
 }
