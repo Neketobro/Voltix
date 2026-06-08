@@ -3,7 +3,7 @@ import { Button, Input } from "../../UI";
 import { useTranslation } from "react-i18next";
 
 export function Header() {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const toggleLang = () => {
     const newLang = i18n.language === "uk" ? "en" : "uk";
@@ -16,7 +16,7 @@ export function Header() {
         <img src="src/assets/logo.png" alt="logo image" className="w-[150px]" />
       </div>
       <div>
-        <Input placeholder="Search" />
+        <Input placeholder={t("search", {ns: "input"})} />
       </div>
       <div className="hidden xl:flex">
         <ActionPanel />

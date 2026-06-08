@@ -3,8 +3,8 @@ type Props = {
   subtitle?: string;
   icon?: string;
 };
-
 export function Benefite({ title, subtitle, icon }: Props) {
+
   return (
     <div className="flex items-center gap-4 px-3 w-full h-full">
       <div className="bg-(--border) w-11 h-11 rounded-full flex items-center justify-center flex-shrink-0">

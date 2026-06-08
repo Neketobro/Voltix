@@ -16,7 +16,7 @@ export function ActionPanel() {
     { key: "catalog", icon: Squares2X2Icon },
     { key: "profile", icon: UserCircleIcon },
     { key: "favorite", icon: HeartIcon },
-    { key: "cart", icon: ShoppingCartIcon },
+    { key: "basket", icon: ShoppingCartIcon },
   ];
 
   return (
