@@ -6,7 +6,10 @@ import {
   NewArrivals,
 } from "../../components";
 
+import { useTranslation } from "react-i18next";
+
 export function Main() {
+  const { t, i18n } = useTranslation();
   return (
     <PageLayout>
       <div className="min-h-screen flex flex-col gap-[10px]">
@@ -17,9 +20,12 @@ export function Main() {
             <NewArrivals className="hidden xl:flex" />
           </div>
           <BenefitsSection />
+          <h1>{t("hello")}</h1>
+          <p>{t("welcome")}</p>
+
+         
         </div>
       </div>
-
     </PageLayout>
   );
 }
